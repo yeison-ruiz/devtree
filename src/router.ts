@@ -1,10 +1,9 @@
 import { Router } from 'express';
+import CreateAccount from './handler';
 
 const router = Router();
 
-router.post('/auth/register', (req, res) => {
-    console.log(req.body)
-})
+ router.post ('/auth/register', CreateAccount)
 
 
 export default router;
